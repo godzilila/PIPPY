@@ -89,42 +89,42 @@ except:
 	print('try again')
 
 
-for x in range(1,1):
-	if os.system("sudo pip3 install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple opencv-contrib-python==3.4.11.45") == 0:
+for x in range(1,4):
+	if os.system("sudo pip3 install --upgrade -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple opencv-contrib-python") == 0:
 		break
-	elif os.system("sudo pip3 install opencv-contrib-python==3.4.11.45") == 0:
+	elif os.system("sudo pip3 install --upgrade opencv-contrib-python") == 0:
 		break
 
-for x in range(1,1):
+for x in range(1,4):
 	if os.system("sudo pip3 uninstall -y numpy") == 0:
 		break
 
-for x in range(1,1):
+for x in range(1,4):
 	if os.system("sudo pip3 install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple numpy==1.21") == 0:
 		break
 	elif os.system("sudo pip3 install numpy==1.21") == 0:
 		break
 
-for x in range(1,1):
+for x in range(1,4):
 	if os.system("sudo apt-get -y install libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasper-dev") == 0:
 		break
 
-for x in range(1,1):
+for x in range(1,4):
 	if os.system("sudo pip3 install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple imutils zmq pybase64 psutil") == 0:
 		break
 	elif os.system("sudo pip3 install imutils zmq pybase64 psutil") == 0:
 		break
 
-for x in range(1,1):
+for x in range(1,4):
 	if os.system("sudo apt-get install -y util-linux procps hostapd iproute2 iw haveged dnsmasq") == 0:
 		break
 
-for x in range(1,1):
+for x in range(1,4):
 	if os.system("sudo pip3 install pi-ina219") == 0:
 		break
 
         
-for x in range(1,1):
+for x in range(1,4):
 	if os.system("cd " + thisPath + " && cd .. && sudo git clone https://github.com/oblique/create_ap") == 0:
 		break
 
